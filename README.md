@@ -8,9 +8,9 @@ In the second module (in the [README_DAY_TWO](./README_DAY_TWO.md) file), you wi
 
 ## Introduction
 
-In this project, you will build an application to show the NASA photo of the day. You will start from scratch and build the entire app. You don't have any design specs to follow for this project, so start by building a basic wireframe first. Make the wireframe simple initially since you don't know what data you'll get back from NASA. 
+In this project, you will build an application to show the NASA photo of the day. You will start from scratch and build the entire app. You don't have any design specs to follow for this project, so start by building a basic wireframe first. Make the wireframe simple initially since you don't know what data you'll get back from NASA.
 
-When you do get the data back, there may be more or less than you expected, so your design plans may change. That's totally fine and very normal in the real world. Just make the proper adjustments and move forward! 
+When you do get the data back, there may be more or less than you expected, so your design plans may change. That's totally fine and very normal in the real world. Just make the proper adjustments and move forward!
 
 This is a really fun project, and one to show your family and friends when you've finished. Have some fun with it!
 
@@ -50,8 +50,9 @@ This is a really fun project, and one to show your family and friends when you'v
 1. If the photo url is NOT a photo, you will need to learn how to display a video in a React app on your own, OR fetch the APOD from a different date.
 
 2. You don't need an API key other than the DEMO_KEY unless you go over the API request limits:
-    - Hourly Limit: 30 requests per IP address per hour
-    - Daily Limit: 50 requests per IP address per day
+
+   - Hourly Limit: 30 requests per IP address per hour
+   - Daily Limit: 50 requests per IP address per day
 
 3. If you need to request an API key, **do not push it to GitHub** along with your code. This is a security risk!
 
@@ -66,15 +67,15 @@ This is a really fun project, and one to show your family and friends when you'v
 
 1. You may run into an error where your components try to access object properties before your data is finished being fetched - ie. `Cannot read property 'url' of undefined`. This means that the data you passed as props is undefined when you expected it to be an object. You can fix this by simply adding something like this to any component that needs to read data from your state object:
 
-    ```js
-    // Display a loading message while the data is fetching
-    if (!something) return <h3>Loading...</h3>;
+   ```js
+   // Display a loading message while the data is fetching
+   if (!something) return <h3>Loading...</h3>;
 
-    // Display your component as normal after the data has been fetched
-    return (
-      {/* your normal JSX here */}
-    );
-    ```
+   // Display your component as normal after the data has been fetched
+   return {
+     /* your normal JSX here */
+   };
+   ```
 
 2. Read through the API docs carefully. As a developer, you will read through many technical docs, so start now to try and understand them.
 
@@ -86,6 +87,6 @@ This is a really fun project, and one to show your family and friends when you'v
 
 - [ ] Submit a link to your github repo in your learning platform.
 
------
+---
 
 ## Part II - [Advanced Styling](./README_DAY_TWO.md)
